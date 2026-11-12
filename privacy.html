@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi · Buku Kas · BetaBotz Service</title>
+  <meta name="description" content="Kebijakan Privasi Buku Kas: aplikasi keuangan offline-first tanpa akun, tanpa server pengembang, dan tanpa analitik.">
+  <meta name="theme-color" content="#04141a">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Buku Kas, kembali ke beranda">
+        <img src="icon.png" alt="" width="38" height="38">
+        <span class="brand-text">
+          <strong>Buku Kas</strong>
+          <small>BetaBotz Service</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="index.html#tentang">Tentang</a>
+        <a href="index.html#fitur">Fitur</a>
+        <a href="index.html#cara">Cara Pakai</a>
+        <a href="privacy.html" aria-current="page">Privasi</a>
+        <a href="tos.html">Ketentuan</a>
+      </nav>
+      <a class="btn btn-sm" href="https://drive.google.com/drive/folders/1SwGNo3q2NDtFGDafd6779mN2FSg13SL3" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Unduh
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="legal-hero">
+        <span class="pill"><span class="dot"></span> Dokumen legal</span>
+        <h1>Kebijakan Privasi</h1>
+        <p>
+          Bagaimana Buku Kas memperlakukan data Anda. Singkatnya: data keuangan tetap
+          di perangkat Anda dan tidak dikirim ke pengembang.
+        </p>
+        <div class="legal-meta">
+          <span>Berlaku efektif: 12 November 2026</span>
+          <span>Versi 1.0</span>
+          <span>Bahasa Indonesia</span>
+        </div>
+      </div>
+
+      <div class="legal-layout">
+        <aside class="toc" aria-label="Daftar isi">
+          <h2>Daftar isi</h2>
+          <ol>
+            <li><a href="#data-lokal">Data di perangkat</a></li>
+            <li><a href="#tidak-dikumpulkan">Yang tidak dikumpulkan</a></li>
+            <li><a href="#izin">Izin perangkat</a></li>
+            <li><a href="#backup">Backup &amp; berbagi</a></li>
+            <li><a href="#keamanan">Keamanan</a></li>
+            <li><a href="#retensi">Retensi &amp; penghapusan</a></li>
+            <li><a href="#anak">Anak-anak</a></li>
+            <li><a href="#perubahan">Perubahan kebijakan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ol>
+          <div class="toc-action">
+            <a href="tos.html">Ketentuan Layanan →</a>
+            <a href="index.html">Kembali ke beranda →</a>
+          </div>
+        </aside>
+
+        <article class="legal">
+          <div class="note">
+            <strong>Ringkasan:</strong> Buku Kas tidak menyediakan akun, tidak memakai
+            server pengembang, tidak menampilkan iklan, dan tidak mengumpulkan data
+            analitik. Data keuangan Anda disimpan di perangkat Anda sendiri.
+          </div>
+
+          <section id="data-lokal">
+            <h2><span class="num">1.</span>Data yang Disimpan di Perangkat</h2>
+            <p>Aplikasi menyimpan data berikut secara lokal di database SQLite perangkat:</p>
+            <ul>
+              <li>Transaksi keuangan, dompet, kategori, periode, dan riwayat tutup buku.</li>
+              <li>Anggaran, transaksi berulang, dan pengaturan aplikasi.</li>
+              <li>Hash PIN aplikasi beserta salt. PIN asli tidak disimpan sebagai teks biasa.</li>
+              <li>Preferensi biometrik, pengingat, tema, dan format periode.</li>
+              <li>Foto bukti transaksi yang Anda lampirkan, disimpan sebagai file lokal.</li>
+            </ul>
+            <p>
+              Data tersebut tidak dikirim ke pengembang atau pihak ketiga. Data tetap berada
+              di perangkat sampai Anda menghapus aplikasi atau membersihkan data aplikasi.
+            </p>
+          </section>
+
+          <section id="tidak-dikumpulkan">
+            <h2><span class="num">2.</span>Data yang Tidak Dikumpulkan</h2>
+            <p>Buku Kas tidak mengumpulkan atau menjual:</p>
+            <ul>
+              <li>Nama, alamat email, nomor telepon, atau data akun pengguna.</li>
+              <li>Lokasi, kontak, mikrofon, atau akses kamera tanpa tindakan Anda.</li>
+              <li>Data analitik, iklan, identitas perangkat, atau riwayat penggunaan.</li>
+              <li>Data keuangan ke server pengembang atau penyedia layanan pihak ketiga.</li>
+            </ul>
+          </section>
+
+          <section id="izin">
+            <h2><span class="num">3.</span>Izin Perangkat</h2>
+            <p>Aplikasi dapat meminta izin berikut, hanya untuk fungsi yang Anda aktifkan:</p>
+            <ul>
+              <li><strong>Notifikasi</strong> untuk pengingat harian lokal.</li>
+              <li><strong>Biometrik</strong> untuk membuka kunci aplikasi di perangkat yang mendukung.</li>
+              <li><strong>Exact alarm</strong> untuk menjadwalkan pengingat pada waktu yang dipilih.</li>
+              <li><strong>Kamera atau galeri</strong> hanya saat Anda memilih foto bukti transaksi.</li>
+              <li><strong>Internet</strong> diperlukan oleh lapisan WebView aplikasi. Aplikasi tidak mengirim data ke server pengembang.</li>
+            </ul>
+            <p>Anda dapat menolak atau mencabut izin melalui pengaturan Android.</p>
+          </section>
+
+          <section id="backup">
+            <h2><span class="num">4.</span>Backup, Ekspor, dan Berbagi</h2>
+            <p>
+              Fitur backup JSON, ekspor CSV/PDF, ekspor foto transaksi, dan berbagi file hanya
+              berjalan ketika Anda memintanya. File dibuat di perangkat lalu disimpan atau
+              dibagikan melalui sistem operasi. Pengembang tidak menerima salinan file tersebut.
+            </p>
+            <p>
+              Backup JSON tidak menyertakan hash PIN maupun file foto transaksi. Restore
+              mempertahankan kredensial perangkat yang sedang aktif.
+            </p>
+          </section>
+
+          <section id="keamanan">
+            <h2><span class="num">5.</span>Keamanan</h2>
+            <p>
+              PIN aplikasi disimpan sebagai hash PBKDF2-SHA256 dengan salt acak. Auto backup
+              Android dinonaktifkan agar data tidak otomatis disalin ke layanan cloud perangkat.
+              Meskipun demikian, tidak ada sistem yang sepenuhnya bebas risiko. Lindungi
+              perangkat dan simpan file backup Anda di tempat yang aman.
+            </p>
+          </section>
+
+          <section id="retensi">
+            <h2><span class="num">6.</span>Retensi dan Penghapusan</h2>
+            <p>
+              Data lokal tetap tersimpan selama aplikasi terpasang. Menghapus aplikasi atau
+              membersihkan data aplikasi akan menghapus database lokal. File backup yang pernah
+              Anda buat dikelola sepenuhnya oleh Anda. Karena pengembang tidak menyimpan data di
+              server, tidak ada data server yang perlu dihapus.
+            </p>
+          </section>
+
+          <section id="anak">
+            <h2><span class="num">7.</span>Anak-anak</h2>
+            <p>
+              Buku Kas tidak ditujukan untuk anak di bawah 13 tahun dan tidak dengan sengaja
+              mengumpulkan data pribadi anak.
+            </p>
+          </section>
+
+          <section id="perubahan">
+            <h2><span class="num">8.</span>Perubahan Kebijakan</h2>
+            <p>
+              Kebijakan ini dapat diperbarui jika fitur atau praktik data berubah. Versi terbaru
+              akan dipublikasikan di halaman ini beserta tanggal berlakunya.
+            </p>
+          </section>
+
+          <section id="kontak">
+            <h2><span class="num">9.</span>Kontak</h2>
+            <p>Pertanyaan tentang privasi dapat dikirim melalui:</p>
+            <ul>
+              <li>Email: <a href="mailto:betabotzofficial@gmail.com">betabotzofficial@gmail.com</a></li>
+              <li>Telegram: <a href="https://t.me/betabotz" target="_blank" rel="noopener">@betabotz</a></li>
+              <li>WhatsApp: <a href="https://wa.me/62882008912795" target="_blank" rel="noopener">+62 882-0089-12795</a></li>
+              <li>WhatsApp: <a href="https://wa.me/62895423183527" target="_blank" rel="noopener">+62 895-4231-83527</a></li>
+            </ul>
+          </section>
+
+          <div class="english">
+            <h2 style="font-size: 17px">English Summary</h2>
+            <p>
+              Buku Kas is an offline-first personal finance app. It has no user accounts, no
+              developer server, no ads, and no analytics. Financial records, settings, a hashed
+              PIN, and reminder preferences are stored locally on your device. Notification,
+              biometric, and exact-alarm permissions are used only for features you enable.
+              Backup, export, and share files are created only when you request them and are
+              handled by your device's operating system. The developer does not receive your
+              data. For privacy questions, contact
+              <a href="mailto:betabotzofficial@gmail.com">betabotzofficial@gmail.com</a>,
+              Telegram <a href="https://t.me/betabotz" target="_blank" rel="noopener">@betabotz</a>,
+              or WhatsApp at
+              <a href="https://wa.me/62882008912795" target="_blank" rel="noopener">+62 882-0089-12795</a>
+              and
+              <a href="https://wa.me/62895423183527" target="_blank" rel="noopener">+62 895-4231-83527</a>.
+            </p>
+          </div>
+
+          <div class="legal-footer">
+            Buku Kas &middot; BetaBotz Service &middot; btz.bukukas.app &middot; Kebijakan
+            Privasi versi 1.0 &middot; Berlaku efektif 12 November 2026
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img src="icon.png" alt="" width="36" height="36">
+            <span><strong>Buku Kas</strong><small>BetaBotz Service</small></span>
+          </a>
+          <p>
+            Aplikasi pencatat keuangan offline-first untuk pribadi dan usaha kecil.
+            Data tetap di perangkat Anda.
+          </p>
+        </div>
+        <div>
+          <h4>Produk</h4>
+          <div class="footer-links">
+            <a href="https://drive.google.com/drive/folders/1SwGNo3q2NDtFGDafd6779mN2FSg13SL3" target="_blank" rel="noopener">Unduh aplikasi</a>
+            <a href="index.html#tentang">Tentang aplikasi</a>
+            <a href="index.html#fitur">Fitur</a>
+            <a href="index.html#cara">Cara pakai</a>
+            <a href="index.html#faq">Pertanyaan umum</a>
+          </div>
+        </div>
+        <div>
+          <h4>Kontak &amp; Legal</h4>
+          <div class="footer-links">
+            <a href="privacy.html">Kebijakan Privasi</a>
+            <a href="tos.html">Ketentuan Layanan</a>
+            <a href="mailto:betabotzofficial@gmail.com">betabotzofficial@gmail.com</a>
+            <a href="https://t.me/betabotz" target="_blank" rel="noopener">Telegram @betabotz</a>
+            <a href="https://wa.me/62882008912795" target="_blank" rel="noopener">WhatsApp 1</a>
+            <a href="https://wa.me/62895423183527" target="_blank" rel="noopener">WhatsApp 2</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 BetaBotz Service. Seluruh hak dilindungi.</span>
+        <span>btz.bukukas.app &middot; Dibuat untuk pengguna Android</span>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-tabbar" aria-label="Navigasi bawah">
+    <a href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+      Beranda
+    </a>
+    <a href="index.html#fitur">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Fitur
+    </a>
+    <a class="on" href="privacy.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+      Privasi
+    </a>
+    <a href="tos.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+      Ketentuan
+    </a>
+  </nav>
+</body>
+</html>
